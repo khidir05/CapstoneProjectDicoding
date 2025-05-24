@@ -18,8 +18,8 @@ class AuthController extends Controller
         ]);
 
         $users = [
-            ['username' => 'fikri', 'password' => '123456'],
-            ['username' => 'admin', 'password' => 'password'],
+            ['username' => 'dir', 'password' => '123456'],
+            ['username' => 'admin', 'password' => '123'],
         ];
 
         foreach ($users as $user) {

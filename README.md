@@ -1,61 +1,82 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+# 💻 Expert System Website for Facial Skin Disease Diagnosis  
+**Coding Camp 2025 – DBS Foundation x Dicoding**  
+Team ID: **CC25-CF022**  
+Project Category: **Health Technology**
 
-## About Laravel
+## 🧠 Overview  
+Skin diseases such as acne, eczema, and rosacea often go undetected in their early stages due to limited access to dermatology services, especially in remote areas of Indonesia. Our project introduces a web-based expert system that leverages machine learning (ML) to help users diagnose facial skin diseases through image classification.  
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+By uploading a photo of their face, users can instantly receive a diagnosis along with simple health education and early treatment suggestions. This tool is designed to support communities with low technological literacy and limited access to dermatologists.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 🎯 Problem Statement  
+Due to heat, pollution, and a lack of public understanding of dermatological health, many people experience delays in getting proper diagnosis and treatment. This can worsen skin conditions and increase healthcare costs.  
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Our solution addresses the question:  
+**"How can we develop an intelligent, web-based system to help users diagnose facial skin diseases quickly and accurately from images?"**
 
-## Learning Laravel
+## 🔍 Research Questions  
+1. How to design and build a web-based expert system for facial skin disease diagnosis?  
+2. What common symptoms can be used as parameters in the expert system?  
+3. How accurate is the system compared to certified dermatologists?  
+4. How useful is this system for non-medical users?
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## 👥 Team Members  
+| Role              | Name                          | University                          |
+|------------------|-------------------------------|--------------------------------------|
+| Machine Learning | Muhamad Fikri Ardani          | Universitas Airlangga                |
+| Machine Learning | Dillan Engelbert Hendrarto    | Universitas Kristen Petra            |
+| Machine Learning | Aufar Raihan Rahmat           | Universitas Airlangga                |
+| Frontend/Backend | Muhammad Alvin Maulana        | Universitas Airlangga                |
+| Frontend/Backend | Khidir Afwan Amlabar          | Politeknik Negeri Cilacap            |
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## 🛠 Technologies Used  
+- **Frontend:** HTML, CSS, JavaScript  
+- **Backend:** Laravel, RESTful API  
+- **Database:** MongoDB  
+- **AI/ML:** Python, Scikit-learn, OpenCV, TensorFlow, Keras  
+- **Model:** Random Forest Classifier + HOG features  
+- **Tools:** Vercel, GitHub, VSCode, Figma, Zoom, Discord
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## 🔍 How It Works  
+1. User uploads a facial image.  
+2. Image is preprocessed using OpenCV and HOG (Histogram of Oriented Gradients).  
+3. The ML model classifies the image into skin disease categories.  
+4. System returns the diagnosis with confidence level and skin health tips.  
 
-## Laravel Sponsors
+## 📦 Features  
+- Instant skin disease detection via image upload  
+- Clear visual results and user-friendly explanations  
+- Login/logout and history tracking  
+- Preventive skincare tips for each diagnosed condition  
+- Responsive UI for desktop and mobile
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## 🧪 AI/ML Pipeline  
+- Image normalization & augmentation  
+- Feature extraction via `skimage.hog`  
+- Model training with RandomForestClassifier  
+- Model saved via `joblib` and served via FastAPI  
+- Confidence score returned alongside label  
 
-### Premium Partners
+## 🗂 Project Timeline  
+| Phase                   | Duration              |
+|------------------------|-----------------------|
+| Planning               | Mar 20 – Apr 20, 2025 |
+| Design & System Plan   | Apr 21 – May 5, 2025  |
+| MVP Development        | May 6 – Jun 13, 2025  |
+| Testing & QA           | Jun 13 – Jun 18, 2025 |
+| Final Delivery         | Jun 18 – Jun 20, 2025 |
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+## ⚠️ Risks & Mitigation  
+- **Data quality:** We use public datasets (e.g., Kaggle) and perform preprocessing & augmentation.  
+- **Model accuracy:** Targeting >90% accuracy with validation and tuning.  
+- **Integration delays:** Early backend-ML coordination with fixed API spec.  
+- **Infrastructure limitations:** Optimize model via compression; explore cloud options if needed.
 
-## Contributing
+## 🙌 Support Needed  
+- Mentors for ML (esp. medical image classification) and full-stack web development  
+- GPU access (e.g., Google Colab Pro)  
+- Reliable cloud storage for datasets & models  
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## 📌 Final Note  
+This project is built not only to showcase technical skills, but also to provide **real impact** by helping underserved communities detect and understand skin conditions early. With inclusivity, simplicity, and innovation, we hope to bring dermatological awareness to a wider audience across Indonesia.
