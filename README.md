@@ -4,6 +4,10 @@
 Team ID: **CC25-CF022**  
 Project Category: **Health Technology**
 
+## IMPORTANT !!! ##
+Before you start the website, please download the machine learning model file from the following link:
+Download ML Model (https://drive.google.com/drive/folders/1_Am_VHZZbdM_YVPDWknVEsx0Jf-ME1WZ?usp=sharing)
+
 ## 🧠 Overview  
 Skin diseases such as acne, eczema, and rosacea often go undetected in their early stages due to limited access to dermatology services, especially in remote areas of Indonesia. Our project introduces a web-based expert system that leverages machine learning (ML) to help users diagnose facial skin diseases through image classification.  
 
