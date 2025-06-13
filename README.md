@@ -5,7 +5,7 @@ Team ID: **CC25-CF022**
 Project Category: **Health Technology**
 
 ## IMPORTANT !!! ##
-Before you start the website, please download the machine learning model file from the following link:
+Before you start the website, please download the dermacare_db (for website) and machine learning model file from the following link:
 Download ML Model (https://drive.google.com/drive/folders/1_Am_VHZZbdM_YVPDWknVEsx0Jf-ME1WZ?usp=sharing)
 
 ## 🧠 Overview  
