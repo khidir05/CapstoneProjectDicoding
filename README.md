@@ -31,8 +31,8 @@ Our solution addresses the question:
 | Machine Learning | Muhamad Fikri Ardani          | Universitas Airlangga                |
 | Machine Learning | Dillan Engelbert Hendrarto    | Universitas Kristen Petra            |
 | Machine Learning | Aufar Raihan Rahmat           | Universitas Airlangga                |
-| Frontend/Backend | Muhammad Alvin Maulana        | Universitas Airlangga                |
-| Frontend/Backend | Khidir Afwan Amlabar          | Politeknik Negeri Cilacap            |
+| Frontend & Backend | Muhammad Alvin Maulana        | Universitas Airlangga                |
+| Frontend & Backend | Khidir Afwan Amlabar          | Politeknik Negeri Cilacap            |
 
 ## 🛠 Technologies Used  
 - **Frontend:** HTML, CSS, JavaScript  
